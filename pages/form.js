@@ -37,7 +37,7 @@ export default class Posts extends React.Component {
   render() {
     const posts = this.props.posts
     return (
-        <React.Fragment>
+        <>
                 {posts.map(post =>
                     <div className="post" key={post.id}>
                         <h2>
@@ -57,7 +57,7 @@ export default class Posts extends React.Component {
                 margin-bottom: 10px;
             }
             `}</style>
-        </React.Fragment>
+        </>
     );
   }
 }

@@ -1,18 +1,14 @@
-import Link from 'next/link'
+import React from 'react'
+import FormLogin from '../components/FormLogin'
 
-function Login() {
-    return (
-      <div>
-        <form>
-        <input type='mail' name='email' />
-        <input type='password' name='password' />
-        <input type='submit' name='submit' />
-        </form>
-        <Link href='../'>
-          <a>TOPへ戻る</a>
-        </Link>
-      </div>
+export default function Login() {
+const submit = async({email,password}) => {
+  console.log(email , password);
+}
+
+    return(
+      <>
+      <FormLogin onSubmit={submit} />
+      </>
     )
   }
-  
-  export default Login;

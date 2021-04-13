@@ -11,5 +11,11 @@ module.exports = {
     config.plugins.push(new webpack.DefinePlugin(env));
 
     return config;
-  }
+  },
+  images: {
+    domains: ["res.cloudinary.com"],
+    // loader: 'cloudinary', // Cloudinaryを使う場合
+    // path: 'https://res.cloudinary.com/myaccount/', // CloudinaryのURLベース
+  },
+
 };

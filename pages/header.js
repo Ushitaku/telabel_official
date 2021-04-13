@@ -12,24 +12,23 @@ import Image from 'next/image'
 //     },
 
 // };
+import {Box} from "@chakra-ui/react"
 
 const Header =() => {
     return(
         <>
-        <div>
+        <Box bg="gray">
          <Link href='./'>
-         <Image src='/rogo.svg' alt='メニュー'
-                  layout={"responsive"}
-                  width={'50'}
-                  height={'50'} />
+         <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/rogo_xsidtk.svg'} alt='ロゴ'
+                  width={'52'}
+                  height={'65'} />
          </Link>
          <Link href='./'>
-          <Image src='/ham.svg' alt='メニュー'
-                  layout={"responsive"}
-                  width={'50'}
-                  height={'50'} />
+          <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/ham_y5ixyj.svg'} alt='メニュー'
+                  width={'51'}
+                  height={'12'} />
          </Link>
-         </div>
+         </Box>
         </>
     )
 }
