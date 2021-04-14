@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import {Box} from "@chakra-ui/react"
 
 // const styles = {
 //     rogo:{
@@ -12,7 +13,7 @@ import Image from 'next/image'
 //     },
 
 // };
-import {Box} from "@chakra-ui/react"
+
 
 const Header =() => {
     return(

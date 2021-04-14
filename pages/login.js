@@ -3,7 +3,7 @@ import FormLogin from '../components/FormLogin'
 
 export default function Login() {
 const submit = async({email,password}) => {
-  console.log(email , password);
+  console.log(email,password);
 }
 
     return(
