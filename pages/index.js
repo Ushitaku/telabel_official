@@ -13,9 +13,9 @@ export default function Home() {
       </Head>
 
         <Header />
-            <Link href='./login'>
+            {/* <Link href='./login'>
             <a>login</a>
-            </Link>
+            </Link> */}
             <Link href='./contactForm'>
             <a>お問い合わせ</a>
             </Link>
