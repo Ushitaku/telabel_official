@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import {Box} from "@chakra-ui/react"
+// import '../styles/header.scss'
 
 const Header =() => {
     return(
         <>
-        <Box bg="gray">
+        <Box size="sm" bg="#27214D">
          <Link href='./'>
          <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/rogo_xsidtk.svg'} alt='ロゴ'
                   width={'52'}
