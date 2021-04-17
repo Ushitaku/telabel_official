@@ -12,3 +12,15 @@
 //       </>
 //     )
 //   }
+
+import React from 'react'
+
+const login = () => {
+  return (
+    <div>
+     <p>heroku</p> 
+    </div>
+  )
+}
+
+export default login

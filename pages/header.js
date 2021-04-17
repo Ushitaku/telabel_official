@@ -2,19 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {Box} from "@chakra-ui/react"
 
-// const styles = {
-//     rogo:{
-//         height:'50%',
-//         width:'50%',
-//     },
-//     ham:{
-//         height:'50%',
-//         width:'50%',
-//     },
-
-// };
-
-
 const Header =() => {
     return(
         <>

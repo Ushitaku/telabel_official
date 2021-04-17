@@ -1,6 +1,4 @@
 import firebase from '../lib/db';
-// import firebase from 'firebase/app'
-// import initFirebase from '../lib/db'
 import React from 'react';
 import Link from 'next/link';
 
