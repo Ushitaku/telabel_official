@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from '../styles/Home.module.scss'
 import Header from './header'
 import Footer from './footer'
 import HeaderBlog from './headerBlog'

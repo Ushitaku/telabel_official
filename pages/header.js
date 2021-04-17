@@ -26,8 +26,8 @@ const Header =() => {
          </Link>
          <Link href='./'>
           <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/ham_y5ixyj.svg'} alt='メニュー'
-                  width={'51'}
-                  height={'12'} />
+                  width={'125'}
+                  height={'31'} />
          </Link>
          </Box>
         </>
