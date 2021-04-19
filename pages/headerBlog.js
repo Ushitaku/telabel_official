@@ -4,7 +4,7 @@ import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
 const HeaderBlog = () => {
   return (
     <Flex
-      bg="gray.600"
+      bg="#27214D"
       p={50}
       w="full"
       alignItems="center"

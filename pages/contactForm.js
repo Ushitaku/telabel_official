@@ -9,6 +9,8 @@ import {
   Input,
   Textarea,
   Text,
+  Box,
+  Button, ButtonGroup,
 } from "@chakra-ui/react"
 
 const contactForm = () => {
@@ -31,11 +33,13 @@ const contactForm = () => {
   }
   return (
     <>
-      <Container>
+    <Box bg="#27214D">
+      <Container width="85%" bg="#403299">
         <form onSubmit={submit}>
         <FormControl id="company" isRequired>
-        <FormLabel>会社名・団体名</FormLabel>
+        <FormLabel color="white">会社名・団体名</FormLabel>
         <Input
+        bg="white"
         type="company"
         placeholder="会社名・団体名を入力してください"
         value={company}
@@ -43,8 +47,9 @@ const contactForm = () => {
         </FormControl>
 
         <FormControl id="name" isRequired>
-        <FormLabel>お名前</FormLabel>
+        <FormLabel color="white">お名前</FormLabel>
         <Input
+        bg="white"
         type="name" 
         placeholder="名前を入力してください"
         value={names}
@@ -52,29 +57,34 @@ const contactForm = () => {
         </FormControl>
 
         <FormControl id="email" isRequired>
-        <FormLabel>メールアドレス</FormLabel>
+        <FormLabel color="white">メールアドレス</FormLabel>
         <Input
+        bg="white"
         type="email" 
         placeholder="アドレスを入力してください"
         value={email}
         onChange={(e) => setEmail(e.target.value)} />
         </FormControl>
 
-        <Text mb="8px">内容</Text>
+        <Text mb="8px" color="white">内容</Text>
       <Textarea
+        bg="white"
         type="content" 
         placeholder="内容を入力してください"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         size="sm"
       />
-        <button>Button</button>
+      <button>
+        送信
+      </button>
         </form>
 
         <Link href='./'>
-          <a>TOPへ戻る</a>
+          <Button>TOPへ戻る</Button>
         </Link>
       </Container>
+    </Box>
     </>
   )
 }

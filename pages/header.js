@@ -1,23 +1,36 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import {Box} from "@chakra-ui/react"
+import {Box,Heading,Button,Flex, Spacer} from "@chakra-ui/react"
 // import '../styles/header.scss'
 
 const Header =() => {
     return(
         <>
-        <Box size="sm" bg="#27214D">
-         <Link href='./'>
+        <Flex bg="#27214D">
+  <Box p="2" >
+    <Heading size="md">
+    <Link href='/'>
          <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/rogo_xsidtk.svg'} alt='ロゴ'
                   width={'52'}
                   height={'65'} />
          </Link>
-         <Link href='./'>
-          <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/ham_y5ixyj.svg'} alt='メニュー'
-                  width={'125'}
-                  height={'31'} />
-         </Link>
-         </Box>
+    </Heading>
+  </Box>
+  <Spacer />
+  <Box >
+      <Link href='/contactForm'>
+    <Button colorScheme="#FFF3C7" mr="4">
+      お問い合わせ
+    </Button>
+    </Link>
+    <Link href='/form'>
+    <Button colorScheme="#FFF3C7" mr="4">
+      ログイン
+    </Button>
+    </Link>
+
+  </Box>
+</Flex>
         </>
     )
 }

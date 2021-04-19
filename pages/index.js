@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Header from './header'
 import Footer from './footer'
 import HeaderBlog from './headerBlog'
+import TopMain from './topMain'
 
 export default function Home() {
   return (
@@ -13,13 +13,7 @@ export default function Home() {
       </Head>
 
         <Header />
-            <Link href='./contactForm'>
-            <a>お問い合わせ</a>
-            </Link>
-        <div>
-          <h3>お寺をラベリングしていくサイト</h3>
-          <h1>テラベル</h1>
-        </div>
+        <TopMain />
         <HeaderBlog />
         <Footer />
     </>
