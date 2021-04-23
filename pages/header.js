@@ -7,7 +7,7 @@ const Header =() => {
     return(
         <>
         <Flex bg="#27214D">
-  <Box p="2" >
+  <Box p="4">
     <Heading size="md">
     <Link href='/'>
          <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618286838/rogo_xsidtk.svg'} alt='ロゴ'
@@ -17,7 +17,7 @@ const Header =() => {
     </Heading>
   </Box>
   <Spacer />
-  <Box >
+  <Box p="4">
       <Link href='/contactForm'>
     <Button colorScheme="#FFF3C7" mr="4">
       お問い合わせ

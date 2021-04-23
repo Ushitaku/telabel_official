@@ -14,6 +14,7 @@
     "@zeit/next-sass": "^1.0.1",
     "dotenv": "^8.2.0",
     "firebase": "^8.3.3",
+    "flamer": "^0.0.4",
     "framer-motion": "^4",
     "next": "10.1.3",
     "node-sass": "^5.0.0",

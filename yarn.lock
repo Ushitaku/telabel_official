@@ -2320,6 +2320,11 @@ firebase@^8.3.3:
     "@firebase/storage" "0.4.7"
     "@firebase/util" "0.4.1"
 
+flamer@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/flamer/-/flamer-0.0.4.tgz#cac7875066c883dc098c43d60f94083074fb95f2"
+  integrity sha1-yseHUGbIg9wJjEPWD5QIMHT7lfI=
+
 focus-lock@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/focus-lock/-/focus-lock-0.8.1.tgz#bb36968abf77a2063fa173cb6c47b12ac8599d33"

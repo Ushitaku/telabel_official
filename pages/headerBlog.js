@@ -1,10 +1,9 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+import { chakra, Box, Flex, useColorModeValue, Link, Image } from "@chakra-ui/react";
 
 const HeaderBlog = () => {
   return (
     <Flex
-      bg="#27214D"
       p={50}
       w="full"
       alignItems="center"

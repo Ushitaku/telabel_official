@@ -2,15 +2,12 @@ import firebase from '../lib/db';
 import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react'
-import { Container } from "@chakra-ui/react"
 import {
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-  Text,
+  FormControl,FormLabel,
+  Input,Textarea,
+  Text,Heading,
   Box,
-  Button, ButtonGroup,
+  Button,
 } from "@chakra-ui/react"
 
 const contactForm = () => {
@@ -33,8 +30,9 @@ const contactForm = () => {
   }
   return (
     <>
-    <Box bg="#27214D">
-      <Container width="85%" bg="#403299">
+    <Box bg="#27214D" mt="10">
+      <Box w="65%"  margin="auto" px="40" bg="#403299">
+        <Heading as="h1" size="2xl" padding="10" color="white" textAlign="center">お問い合わせ</Heading>
         <form onSubmit={submit}>
         <FormControl id="company" isRequired>
         <FormLabel color="white">会社名・団体名</FormLabel>
@@ -75,15 +73,27 @@ const contactForm = () => {
         onChange={(e) => setContent(e.target.value)}
         size="sm"
       />
-      <button>
+      <Box textAlign="center">
+      <button style={{
+        color:"white",
+        background:"#27214D",
+        padding:"10px",
+        paddingLeft:"5em",
+        paddingRight:"5em",
+        margin:"10px",
+        marginBottom:"3em",
+        borderRadius:"6px"
+        }}>
         送信
       </button>
+      </Box>
         </form>
-
-        <Link href='./'>
-          <Button>TOPへ戻る</Button>
-        </Link>
-      </Container>
+    </Box>
+    <Box textAlign="center" p="30">
+      <Link href='./'>
+      <Button m="auto" size="lg" colorScheme="purple">TOPへ戻る</Button>
+      </Link>
+    </Box>
     </Box>
     </>
   )
