@@ -18,4 +18,8 @@ module.exports = {
     // path: 'https://res.cloudinary.com/myaccount/', // CloudinaryのURLベース
   },
 
+  future:{
+    webpack5: true,
+  },
+
 };

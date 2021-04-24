@@ -24,7 +24,7 @@ const HeaderBlog = () => {
             bgSize="cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1593642532400-2682810df593?ixlib=rb-1.2.1&ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80')",
+                "url('https://res.cloudinary.com/telabel/image/upload/v1619176884/catmain_2x_omyik9.png')",
             }}
           ></Box>
         </Box>
@@ -35,21 +35,18 @@ const HeaderBlog = () => {
             color={useColorModeValue("gray.800", "white")}
             fontWeight="bold"
           >
-            Build Your New{" "}
-            <chakra.span color={useColorModeValue("brand.600", "brand.400")}>
-              Idea
-            </chakra.span>
+            めっちゃ猫がいる寺{" "}
           </chakra.h2>
           <chakra.p mt={4} color={useColorModeValue("gray.600", "gray.400")}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-            modi reprehenderit vitae exercitationem aliquid dolores ullam
-            temporibus enim expedita aperiam mollitia iure consectetur dicta
-            tenetur, porro consequuntur saepe accusantium consequatur.
+          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
+          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
+          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
+          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
           </chakra.p>
 
           <Box mt={8}>
             <Link
-              href="#"
+              href="posts/01"
               bg="gray.900"
               color="gray.100"
               px={5}
@@ -58,7 +55,7 @@ const HeaderBlog = () => {
               rounded="lg"
               _hover={{ bg: "gray.80" }}
             >
-              Start Now
+              記事を見る
             </Link>
           </Box>
         </Box>

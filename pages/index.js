@@ -5,6 +5,7 @@ import HeaderBlog from './headerBlog'
 import About from './about'
 import TopMain from './topMain'
 import HeaderBlogTitle from './headerBlogTitle'
+import BlogLink from './blogLink'
 import { Box, Container, } from "@chakra-ui/react";
 
 
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <HeaderBlogTitle />
         <HeaderBlog />
+        <BlogLink />
         <Footer />
     </Box>
     </>
