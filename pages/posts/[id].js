@@ -13,27 +13,21 @@ export default function Post({ postData }) {
         </Head>
         <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <h2>{postData.location}</h2>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-      <Box>
-         <Flex>
-        <Box >
-        <Image p="3" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/facebook_erc9dv.png'} alt='Facebook'
+
+      <Flex justifyContent="flex-end" mt="4" >
+        <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/facebook_erc9dv.png'} alt='Facebook'
                 width={''} height={''} />
-        </Box>
-        <Box>
-        <Image p="3" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/twitter_wzmz9k.png'} alt='Twitter'
+        <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/twitter_wzmz9k.png'} alt='Twitter'
                 width={''} height={''} />
-        </Box>
-        <Box>
-        <Image p="3" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/instergram_oug8df.png'} alt='Instagram'
+        <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/instergram_oug8df.png'} alt='Instagram'
                 width={''} height={''} />
-        </Box>
-        </Flex>
-      </Box>
+      </Flex>
     </Layout>
     )
   }

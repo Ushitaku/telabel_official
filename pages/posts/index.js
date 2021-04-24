@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Date from '../../components/date'
 import Layout, { siteTitle } from '../../components/layout'
-import utilStyles from '../../styles/utils.module.css'
 import { getSortedPostsData } from '../../lib/posts'
+import {Box, Flex, Spacer, Card } from '@chakra-ui/react'
+
 
 export async function getServerSideProps(context) {
   const allPostsData = getSortedPostsData()
@@ -20,23 +21,40 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>記事一覧</p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>
-              <a>{title}</a>
-            </Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
-        </ul>
+      <section >
+        {allPostsData.map((post) => <Card key={post.id} post={post}/>)
+          }
+        <Box 
+        // bgImage="url('https://res.cloudinary.com/dk2uwbtnl/image/upload/v1618981508/wed/Frame_1_pludwo.png')"
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bg="gray"
+        w={300}
+        h={300}
+        align="right"
+        >
+        <Flex align="right" p="3">
+         <Spacer/>
+        <Box 
+        w="10%"
+        h="95%"
+        bg="#fff"
+        mr="5"
+        >
+            アイウエオ
+        </Box>
+        <Box 
+        w="10%"
+        h="40%"
+        bg="#b0c4de"
+        mr="5"
+        >
+            かきくけこ
+        </Box>
+        </Flex>
+
+        </Box>
+
       </section>
     </Layout>
   )

@@ -7,7 +7,8 @@ const BlogLink = () => {
         <>
         <Box mb="40" textAlign="center">
         <Link href="posts">
-        <Button >続きを見る</Button>
+        <Button size="lg" border="2px"
+        borderColor="gray">他の記事も見てみる</Button>
         </Link>
         </Box>
         </>
