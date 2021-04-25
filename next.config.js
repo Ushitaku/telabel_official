@@ -12,6 +12,8 @@ module.exports = {
 
     return config;
   },
+
+
   images: {
     domains: ["res.cloudinary.com"],
     // loader: 'cloudinary', // Cloudinaryを使う場合
