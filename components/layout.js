@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { Button, } from '@chakra-ui/react'
 
 // const name = 'Takuto'
 export const siteTitle = '記事一覧'
@@ -61,9 +62,9 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/posts">
-            <a>← 記事一覧に戻る</a>
-          </Link>
+          {/* <Link href="/posts">
+            <Button>← 記事一覧に戻る</Button>
+          </Link> */}
         </div>
       )}
     </div>

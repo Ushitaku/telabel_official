@@ -8,7 +8,7 @@ const TopMain = () => {
         <>
     {/* <Container > */}
         <Box w="100%" my="130">
-        <Image  src={'https://res.cloudinary.com/telabel/image/upload/v1619014566/maintitle_l72v9a.svg'} alt='title'
+        <Image  src={'https://res.cloudinary.com/telabel/image/upload/v1619531837/animation_n8jkba.gif'} alt='title'
                 width={''} height={''} />
         </Box>
 

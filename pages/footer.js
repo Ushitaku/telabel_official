@@ -24,19 +24,20 @@ const Footer = () => {
                 <br/>と感じてもらう。そんなサイトを目指して参ります。
             </Text>
          <Flex>
-        <Box mr="1" mt="2">
+        <Box mr="2" mt="2">
         <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/facebook_erc9dv.png'} alt='Facebook'
-                width={'48'} height={'48'} />
+                width={'48'} height={'48'} 
+                _hover={{ opacity: '0.5' }}/>
         </Box>
-        <Box mx="1" mt="2">
+        <Box mx="2" mt="2">
         <Image p="5" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/youtube_efhoiw.png'} alt='Youtube'
                 width={'48'} height={'48'} />
         </Box>
-        <Box mx="1" mt="2">
+        <Box mx="2" mt="2">
         <Image p="5" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/twitter_wzmz9k.png'} alt='Twitter'
                 width={'48'} height={'48'} />
         </Box>
-        <Box mx="1" mt="2">
+        <Box mx="2" mt="2">
         <Image p="5" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/instergram_oug8df.png'} alt='Instagram'
                 width={'48'} height={'48'} />
         </Box>
