@@ -62,9 +62,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          {/* <Link href="/posts">
-            <Button>← 記事一覧に戻る</Button>
-          </Link> */}
+
         </div>
       )}
     </div>

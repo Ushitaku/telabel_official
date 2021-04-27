@@ -7,12 +7,12 @@ const TopMain = () => {
     return (
         <>
     {/* <Container > */}
-        <Box w="100%" my="130">
-        <Image  src={'https://res.cloudinary.com/telabel/image/upload/v1619531837/animation_n8jkba.gif'} alt='title'
+        <Box w="100%" mt='-28'>
+        <Image  src={'https://res.cloudinary.com/telabel/image/upload/v1619533939/animation_jik7x3.gif'} alt='title'
                 width={''} height={''} />
         </Box>
 
-        <Box my="28" ml="20">
+        <Box mt='-32' mb="28" ml="20">
         <motion.div 
                  animate={{ y:50 }}
                  transition={{
