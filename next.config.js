@@ -24,4 +24,9 @@ module.exports = {
     webpack5: true,
   },
 
+  env:{
+    SITE_URL:"https://telabel-official-q1x2tx72h-ushitaku.vercel.app/",
+    
+  }
+
 };
