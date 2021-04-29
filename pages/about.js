@@ -8,7 +8,7 @@ import React from 'react'
 function About() {
     return (
         <>
-        <Box w="50%" h='50%' pt="30" m="auto">
+        <Box w="50%" h='50%' pt="24" m="auto">
         <Image src={'https://res.cloudinary.com/telabel/image/upload/v1619018560/about_pnjgld.svg'} alt='about'
                 width={''} height={''} />
         </Box>

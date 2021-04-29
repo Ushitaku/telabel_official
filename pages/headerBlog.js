@@ -1,66 +1,63 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Link, Image } from "@chakra-ui/react";
+import { chakra, Box, Flex, Grid, Link, Spacer,Button, Image } from "@chakra-ui/react";
 
 const HeaderBlog = () => {
   return (
-    <Flex
-      p={50}
-      w="full"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Box
-        bg={useColorModeValue("white", "gray.800")}
-        mx={{ lg: 8 }}
-        display={{ lg: "flex" }}
-        maxW={{ lg: "5xl" }}
-        shadow={{ lg: "lg" }}
-        rounded={{ lg: "lg" }}
-      >
-        <Box w={{ lg: "50%" }}>
-          <Box
-            h={{ base: 64, lg: "full" }}
-            rounded={{ lg: "lg" }}
-            bgSize="cover"
-            style={{
-              backgroundImage:
-                "url('https://res.cloudinary.com/telabel/image/upload/v1619176884/catmain_2x_omyik9.png')",
-            }}
-          ></Box>
+<Box bg='#27214D'>
+        <Grid mt='10' justifyItems='center' alignItems='center' templateColumns="repeat(3, 1fr)" gap={6} >
+        <Link href='posts/01' _hover={{ textDecoration: "none" }}>
+          <Box 
+          _hover={{ fontWeight: 'bold' }}
+          bgImage="url('https://res.cloudinary.com/telabel/image/upload/v1619176884/catmain_2x_omyik9.png')"
+          bgPosition="center" bgRepeat="no-repeat"
+          w={300} h={300} align="right">
+        <Flex align="right" p="3">
+      <Spacer/>
+        <Box fontSize="lg" w="10%" h="95%" bg="#fff" mr="5" align="center" >
+        猫がめっちゃいるお寺
         </Box>
-
-        <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
-          <chakra.h2
-            fontSize={{ base: "2xl", md: "3xl" }}
-            color={useColorModeValue("gray.800", "white")}
-            fontWeight="bold"
-          >
-            めっちゃ猫がいる寺{" "}
-          </chakra.h2>
-          <chakra.p mt={4} color={useColorModeValue("gray.600", "gray.400")}>
-          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
-          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
-          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
-          めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺めっちゃ猫がいる寺
-          </chakra.p>
-
-          <Box mt={8}>
-            <Link
-              href="posts/01"
-              bg="gray.900"
-              color="gray.100"
-              px={5}
-              py={3}
-              fontWeight="semibold"
-              rounded="lg"
-              _hover={{ bg: "gray.80" }}
-            >
-              記事を見る
-            </Link>
-          </Box>
-        </Box>
+      <Box textDecoration='none' fontSize="xl" color="white" w="10%" h="40%" bg="#403299" mr="5" align="center">
+      山口県 雲林寺
       </Box>
-    </Flex>
+        </Flex>
+        </Box>
+        </Link>
+        <Link href='posts/02' _hover={{ textDecoration: "none" }}>
+          <Box
+          _hover={{ fontWeight: 'bold' }}
+          bgImage="url('https://res.cloudinary.com/telabel/image/upload/v1619322635/fudoichi_1027_1-e1572597098733_nqgcbw.jpg')"
+          bgPosition="center" bgRepeat="no-repeat"
+          w={300} h={300} align="right">
+        <Flex align="right" p="3">
+      <Spacer/>
+        <Box fontSize="lg" w="10%" h="95%" bg="#fff" mr="5" align="center">
+        時々住職が歌うお寺
+        </Box>
+      <Box fontSize="xl" color="white" w="10%" h="40%" bg="#403299" mr="5" align="center">
+      福岡県 専立寺
+      </Box>
+        </Flex>
+        </Box>
+        </Link>
+        <Link href='posts/03' _hover={{ textDecoration: "none" }}>
+          <Box 
+          _hover={{ fontWeight: 'bold' }}
+          bgImage="url('https://res.cloudinary.com/telabel/image/upload/v1619444065/caption_fmmo1a.jpg')"
+          bgPosition="center" bgRepeat="no-repeat"
+          w={300} h={300} align="right">
+        <Flex align="right" p="3">
+      <Spacer/>
+        <Box fontSize="lg" w="10%" h="95%" bg="#fff" mr="5" align="center">
+        大仏がナナメなお寺
+        </Box>
+      <Box fontSize="xl" color="white" w="10%" h="40%" bg="#403299" mr="5" align="center">
+      熊本県 日輪寺
+      </Box>
+        </Flex>
+        </Box>
+        </Link>
+        </Grid>
+</Box>
   );
 };
 

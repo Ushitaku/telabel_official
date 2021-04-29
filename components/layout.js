@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { Button, } from '@chakra-ui/react'
 
 // const name = 'Takuto'
 export const siteTitle = '記事一覧'
@@ -11,7 +12,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -28,18 +29,18 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
+            {/* <Image
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
             />
-            <h1 className={utilStyles.heading2Xl}></h1>
+            <h1 className={utilStyles.heading2Xl}></h1> */}
           </>
         ) : (
           <>
-            <Link href="/">
+            {/* <Link href="/">
               <a>
                 <Image
                   priority
@@ -49,21 +50,19 @@ export default function Layout({ children, home }) {
                   width={108}
                 />
               </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            </Link> */}
+            {/* <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}></a>
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+
         </div>
       )}
     </div>
