@@ -62,12 +62,11 @@ const Footer = () => {
     </Flex>
 </Box>
 
-<Box bg="#FFF3C7" padding="2" mt="20" textAlign="center">
+<Box color='white' bg="#403299" padding="2" mt="20" textAlign="center">
     <p>© 2021 Telabel.  All Rights Reserved.</p>
 </Box>
     </>
     )
-
 }
 
 export default Footer
