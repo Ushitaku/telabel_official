@@ -2,6 +2,7 @@ import firebase from '../lib/db';
 import React from 'react';
 import Link from 'next/link';
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import {
   FormControl,FormLabel,
   Input,Textarea,
@@ -15,10 +16,13 @@ const contactForm = () => {
   const [names, setNames] = useState("");
   const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
+  const router = useRouter();
   
   const submit = (e) => {
     e.preventDefault();
-    console.log(email);
+    alert('送信しました！');
+    router.push('/');
+    // console.log(email);
 
     firebase.firestore().collection("contact").add({
       company: company,
@@ -82,7 +86,7 @@ const contactForm = () => {
         paddingRight:"5em",
         margin:"10px",
         marginBottom:"3em",
-        borderRadius:"6px"
+        borderRadius:"6px",
         }}>
         送信
       </button>

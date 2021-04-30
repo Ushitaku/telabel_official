@@ -6,59 +6,28 @@ import Link from 'next/link'
 import { Button, } from '@chakra-ui/react'
 
 // const name = 'Takuto'
-export const siteTitle = '記事一覧'
+// export const siteTitle = '記事一覧'
 
-export default function Layout({ children, home,title ="テラベル",description="お寺をラベリングしていくサイト テラベル" }) {
+export default function Layout({ children, home, title ="テラベル", description="お寺をラベリングしていくサイト" }) {
   return (
-    <div className={styles.container}>
+    <>
+      <header>
       <Head>
       <meta property="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`https://res.cloudinary.com/telabel/image/upload/v1619681146/ogp_vee8y7.png`} />
       <meta name="twitter:card" content="summary_large_image"/>
-      <meta name="og:title" content={siteTitle} />
-      <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            {/* <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-            />
-            <h1 className={utilStyles.heading2Xl}></h1> */}
-          </>
-        ) : (
-          <>
-            {/* <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                />
-              </a>
-            </Link> */}
-            {/* <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}></a>
-              </Link>
-            </h2> */}
-          </>
-        )}
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-
-        </div>
-      )}
-    </div>
+      
+      <main>
+      <div className={styles.container}>
+      {children}
+      </div>
+      </main>
+      
+    
+    </>
   )
 }

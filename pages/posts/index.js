@@ -22,7 +22,7 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="https://res.cloudinary.com/telabel/image/upload/v1618286838/fabicon_jr2jqg.png" />
       </Head>
       <Head>
-        <title>{siteTitle}</title>
+        <title>記事一覧</title>
       </Head>
       <Box p='20' bg='#27214D' align='center'>
       <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1619105306/articletitle_jvcnlp.svg'} alt='Facebook'
