@@ -25,16 +25,16 @@ const HeaderBlog = () => {
         <Link href='posts/02' _hover={{ textDecoration: "none" }}>
           <Box
           _hover={{ fontWeight: 'bold' }}
-          bgImage="url('https://res.cloudinary.com/telabel/image/upload/v1619322635/fudoichi_1027_1-e1572597098733_nqgcbw.jpg')"
+          bgImage="url('https://res.cloudinary.com/telabel/image/upload/v1619779436/170065590_2281828171949410_8020650102675147847_n_beipdd.jpg')"
           bgPosition="center" bgRepeat="no-repeat"
           w={300} h={300} align="right">
         <Flex align="right" p="3">
       <Spacer/>
         <Box fontSize="lg" w="10%" h="95%" bg="#fff" mr="5" align="center">
-        時々住職が歌うお寺
+        マルシェをやるお寺
         </Box>
       <Box fontSize="xl" color="white" w="10%" h="40%" bg="#403299" mr="5" align="center">
-      福岡県 専立寺
+      福岡県 妙静寺
       </Box>
         </Flex>
         </Box>
