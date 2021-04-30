@@ -2,8 +2,9 @@ import Head from 'next/head'
 import Layout from '../../components/layout'
 import Date from '../../components/date'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import utilStyles from '../../styles/utils.module.css'
-import {Box, Flex, Image,Link,Button } from '@chakra-ui/react'
+// import utilStyles from '../../styles/utils.module.css'
+import {Box, Flex, Link,Button,Heading,Text } from '@chakra-ui/react'
+import Image from 'next/image'
 import {InstapaperShareButton, TwitterShareButton, FacebookShareButton,} from "react-share";
 
 export default function Post({ postData }) {
@@ -13,31 +14,41 @@ export default function Post({ postData }) {
         <link rel="icon" href="https://res.cloudinary.com/telabel/image/upload/v1618286838/fabicon_jr2jqg.png" />
         <title>{postData.title}</title>
       </Head>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <h2>{postData.location}</h2>
-        <div className={utilStyles.lightText}>
+      <Box>
+        <Heading p='2' color='#403299'　bg='#FFF3C7' mt='10'>{postData.title}</Heading>
+        <Text mt='4' fontSize='2xl'>{postData.location}</Text>
+        <Box mb='16'> 
           <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </Box>
+        <Box dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
-      <Flex justifyContent="flex-end" m='4' mt="4" >
-        <FacebookShareButton url={`https://telabel-official-q1x2tx72h-ushitaku.vercel.app/posts/${postData.id}`}>
-        <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/facebook_erc9dv.png'} alt='Facebook'
-                width={''} height={''} />
+      <Flex justifyContent="flex-end">
+      <Box mr='1' _hover={{
+    　　opacity: 0.7,
+  　　　}}>
+        <FacebookShareButton url={`https://telabel-official-ushitaku.vercel.app/posts/${postData.id}`}>
+        <Image  src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/facebook_erc9dv.png'} alt='Facebook'
+                width={44} height={44} />
         </FacebookShareButton>
-
-        <TwitterShareButton url={`https://telabel-official-q1x2tx72h-ushitaku.vercel.app/posts/${postData.id}`} title={postData.title}>
-        <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/twitter_wzmz9k.png'} alt='Twitter'
-                width={''} height={''} />
+      </Box>
+      <Box mr='2' _hover={{
+    　　opacity: 0.7,
+  　　　}}>
+        <TwitterShareButton url={`https://telabel-official-ushitaku.vercel.app/posts/${postData.id}`} title={postData.title}>
+        <Image src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/twitter_wzmz9k.png'} alt='Twitter'
+                width={44} height={44} />
         </TwitterShareButton>
+      </Box>
+
         {/* <InstapaperShareButton url={`https://telabel-official-q1x2tx72h-ushitaku.vercel.app/posts/${postData.id}`}>
         <Image p="" src={'https://res.cloudinary.com/telabel/image/upload/v1618401644/instergram_oug8df.png'} alt='Instagram'
                 width={''} height={''} />
         </InstapaperShareButton> */}
       </Flex>
           <Link href="/posts">
-            <Button>← 記事一覧に戻る</Button>
+            <Button colorScheme="purple">← 記事一覧に戻る</Button>
           </Link>
+      </Box>
     </Layout>
     )
   }
