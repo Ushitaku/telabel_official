@@ -29,11 +29,13 @@ export default function Home({ allPostsData }) {
                 width={'397'} height={'54'} />
       </Box>
       <Box bg='#27214D'>
+       <Box w='80%' m='auto'>
         <Grid justifyItems='center' alignItems='center' templateColumns="repeat(3, 1fr)" gap={6} >
           {allPostsData.map((({id,date,title,location,cardImage})=>
         <Link href={`/posts/${id}`}
         _hover={{ textDecoration: "none" }} >
           <Box 
+          mb='10'
           _hover={{ fontWeight: 'bold' }}
           _groupHover={{ color: 'tomato' }}
           bgImage={`url(${cardImage})`}
@@ -58,7 +60,8 @@ export default function Home({ allPostsData }) {
         borderColor="gray"><a>TOPに戻る</a></Button>
         </Link>
         </Box>
-        </Box>
+      </Box>
+    </Box>
     </>
   )
 }
