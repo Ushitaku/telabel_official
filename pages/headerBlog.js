@@ -3,7 +3,7 @@ import { chakra, Box, Flex, Grid, Link, Spacer,Button, Image } from "@chakra-ui/
 
 const HeaderBlog = () => {
   return (
-<Box bg='#27214D'>
+<Box bg='#27214D' w='80%' m='auto'>
         <Grid mt='10' justifyItems='center' alignItems='center' templateColumns="repeat(3, 1fr)" gap={6} >
         <Link href='posts/01' _hover={{ textDecoration: "none" }}>
           <Box 
