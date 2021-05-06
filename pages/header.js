@@ -18,15 +18,20 @@ const Header =() => {
   </Box>
   <Spacer />
   <Box p="4">
-      <Link href='/contactForm'>
-    <Button colorScheme="#FFF3C7" mr="4">
+    <Link href='/event'>
+      <Button colorScheme="#FFF3C7" mr="4">
+      イベント掲示板
+      </Button>
+    </Link>
+    <Link href='/contactForm'>
+      <Button colorScheme="#FFF3C7" mr="4">
       お問い合わせ
-    </Button>
+      </Button>
     </Link>
     <Link href='/form'>
-    <Button colorScheme="#FFF3C7" mr="4">
-      ログイン
-    </Button>
+      <Button colorScheme="#FFF3C7" mr="4">
+        お寺関係者の方へ
+      </Button>
     </Link>
 
   </Box>
