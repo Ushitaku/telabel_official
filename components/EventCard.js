@@ -9,7 +9,7 @@ export default function EventCard({eventpost}) {
             <p>{eventpost.date}</p>
             <p>{eventpost.money}</p>
             <p>{eventpost.email}</p>
-            <p>{eventpost.comment}</p>
+            <p>{eventpost.content}</p>
         </div>
     )
 }

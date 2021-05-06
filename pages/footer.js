@@ -46,16 +46,17 @@ const Footer = () => {
 
     <Box w="50%" textAlign="center" color="white"> 
         <Breadcrumb fontWeight="bold" fontSize="lg">
-        <BreadcrumbItem>
-        <BreadcrumbLink href="/">ホーム</BreadcrumbLink>
-        </BreadcrumbItem>
 
         <BreadcrumbItem>
-        <BreadcrumbLink href="/login">ログイン</BreadcrumbLink>
+        <BreadcrumbLink href="/event/">イベント掲示板</BreadcrumbLink>
         </BreadcrumbItem>
 
         <BreadcrumbItem>
         <BreadcrumbLink href="/contactForm">お問い合わせ</BreadcrumbLink>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+        <BreadcrumbLink href="/EventForm">お寺関係者の方へ</BreadcrumbLink>
         </BreadcrumbItem>
         </Breadcrumb>
     </Box>

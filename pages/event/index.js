@@ -16,7 +16,7 @@ export default function event({AllEvents}) {
 
 export async function getServerSideProps(context) {
   // 外部APIからデータフェッチ
-  const querySnap = await firebase.firestore().collection('event').orderBy('timestamp',"desc").get()
+  const querySnap = await firebase.firestore().collection('eventpost').orderBy('timestamp',"desc").get()
     const AllEvents = querySnap.docs.map(docSnap => {
         return {
             ...docSnap.data(),
