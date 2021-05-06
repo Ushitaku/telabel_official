@@ -28,7 +28,7 @@ const Header =() => {
       お問い合わせ
       </Button>
     </Link>
-    <Link href='/form'>
+    <Link href='/EventForm'>
       <Button colorScheme="#FFF3C7" mr="4">
         お寺関係者の方へ
       </Button>
