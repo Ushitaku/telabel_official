@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react"
 
 const EventForm = () => {
-  const [group, setGroup] = useState("");
+  const [tela, setTela] = useState("");
   const [title, setTitle] = useState("");
   const [place, setPlace] = useState("");
   const [email, setEmail] = useState("");
@@ -28,7 +28,7 @@ const EventForm = () => {
     // console.log(email);
 
     firebase.firestore().collection("eventpost").add({
-      group: group,
+      tela: tela,
       title: title,
       place: place,
       date: date,
@@ -44,14 +44,14 @@ const EventForm = () => {
       <Box w="65%"  margin="auto" px="40" bg="#403299">
         <Heading as="h1" size="2xl" padding="10" color="white" textAlign="center">イベント情報登録</Heading>
         <form onSubmit={submit}>
-        <FormControl id="group" isRequired>
+        <FormControl id="tela" isRequired>
         <FormLabel color="white">法人名・団体名</FormLabel>
         <Input
         bg="white"
-        type="company"
+        type="tela"
         placeholder="法人名・団体名を入力してください"
-        value={group}
-        onChange={(e) => setGroup(e.target.value)} />
+        value={tela}
+        onChange={(e) => setTela(e.target.value)} />
         </FormControl>
 
         <FormControl id="title" isRequired>

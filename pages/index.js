@@ -29,14 +29,14 @@ export default function Home({Events}) {
         <BlogLink />
 
   {/* 追加 */}
-  <Box w="90%" m="auto" mb="40" bg="#fff" pb="20">
+  <Box w="90%" m="auto" mb="40" bg="#27214D" pb="20">
   <Heading as="h3" size="lg" align="center" py="10">イベント情報</Heading>
   {/* カード */}
 <Grid templateColumns="repeat(3, 1fr)" gap={3} m="auto" w="95%">
    {Events.map(eventpost => 
     <Link href={`/event/${eventpost.tela}`}>
      <Flex key={eventpost.id}
-      bg={"#F9FAFB"}
+      bg={"#FFF3C7"}
       p={5}
       w="400px"
       alignItems="center"
@@ -56,7 +56,7 @@ export default function Home({Events}) {
             fontSize="sm"
             color={"gray.800"}
           >
-            {eventpost.group}
+            {eventpost.tela}
           </chakra.span>
           <chakra.span
             bg={"brand.200"}
@@ -78,7 +78,7 @@ export default function Home({Events}) {
             mt={2}
             color={"gray.800"}
           >
-            {eventpost.content}
+            {eventpost.title}
           </chakra.h1>
           <chakra.p
             fontSize="sm"
@@ -104,7 +104,7 @@ export default function Home({Events}) {
               color={"brand.600"}
               wordBreak="break-word"
             >
-              {eventpost.email}
+              <span>連絡先:{eventpost.email}</span>
             </Text>
           </Flex>
 

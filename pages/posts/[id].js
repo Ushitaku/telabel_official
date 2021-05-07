@@ -5,7 +5,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 // import utilStyles from '../../styles/utils.module.css'
 import {Box, Flex, Link,Button,Heading,Text } from '@chakra-ui/react'
 import Image from 'next/image'
-import {InstapaperShareButton, TwitterShareButton, FacebookShareButton,} from "react-share";
+import { TwitterShareButton, FacebookShareButton,} from "react-share";
 
 export default function Post({ postData }) {
     return (
@@ -24,9 +24,9 @@ export default function Post({ postData }) {
 
         <Box align="center">
       <Link href={`/event/${postData.tela}`} align="center">
-        <Box bg="#fff" color="black" my="20" p="5" width="250px">
-          btn
-        </Box>
+        <Button colorScheme="purple" my="20" p="5" width="250px">
+          このお寺のイベント情報
+        </Button>
       </Link>
       </Box>
 
