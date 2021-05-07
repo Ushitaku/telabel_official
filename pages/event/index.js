@@ -2,21 +2,35 @@ import firebase from '../../lib/db';
 import React from 'react';
 import Link from 'next/link';
 import EventCard from '../../components/EventCard'
+import {Grid,Box,Heading} from "@chakra-ui/react";
 
 export default function event({AllEvents}) {
 // console.log(AllEvents);
     
     return (
-        
-        <div>
-           {AllEvents.map(eventpost => <EventCard key={eventpost.id} eventpost={eventpost}/>)}
-        </div>
+      <Box bg="#27214D">
+      <Box align="center" my="20">
+        <Heading as="h2" size="xl" color="#fff" >
+        イベント一覧
+        </Heading>
+      </Box>
+      <Box my="20" bg="#F9FAFB" h="600px" w="90%" m="auto">
+      <Grid templateColumns="repeat(3, 1fr)" gap={3} m="auto" py="20">
+         {AllEvents.map(eventpost => <EventCard key={eventpost.id} eventpost={eventpost}/>)}
+      </Grid>
+      </Box>
+      </Box>
     )
 }
 
 export async function getServerSideProps(context) {
   // 外部APIからデータフェッチ
-  const querySnap = await firebase.firestore().collection('eventpost').orderBy('timestamp',"desc").get()
+  const querySnap = await firebase
+  .firestore()
+  .collection('eventpost')
+  .orderBy('timestamp',"desc")
+  .get()
+  
     const AllEvents = querySnap.docs.map(docSnap => {
         return {
             ...docSnap.data(),

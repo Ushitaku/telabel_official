@@ -17,7 +17,6 @@ export async function getServerSideProps(context) {
 export default function Home({ allPostsData }) {
   return (
     <>
-    {/* <Layout home> */}
       <Head>
         <link rel="icon" href="https://res.cloudinary.com/telabel/image/upload/v1618286838/fabicon_jr2jqg.png" />
       </Head>
